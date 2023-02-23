@@ -22,7 +22,7 @@ class Timestamp extends Type
     /**
      * @inheritDoc
      */
-    public function getName()
+    public function getName(): string
     {
         return self::TIMESTAMP;
     }
@@ -30,7 +30,7 @@ class Timestamp extends Type
     /**
      * @inheritDoc
      */
-    public function getSqlDeclaration(array $fieldDeclaration, AbstractPlatform $platform)
+    public function getSqlDeclaration(array $fieldDeclaration, AbstractPlatform $platform): string
     {
         return $platform->getIntegerTypeDeclarationSQL($fieldDeclaration);
     }
@@ -38,7 +38,7 @@ class Timestamp extends Type
     /**
      * @inheritDoc
      */
-    public function convertToDatabaseValue($value, AbstractPlatform $platform)
+    public function convertToDatabaseValue($value, AbstractPlatform $platform): mixed
     {
         if (null === $value) {
             return null;
@@ -58,7 +58,7 @@ class Timestamp extends Type
     /**
      * @inheritDoc
      */
-    public function convertToPHPValue($value, AbstractPlatform $platform)
+    public function convertToPHPValue($value, AbstractPlatform $platform): mixed
     {
         if (null === $value) {
             return null;
