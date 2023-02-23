@@ -1,7 +1,7 @@
 {
-    "name": "mmerian/doctrine-timestamp",
+    "name": "partitech/doctrine-timestamp",
     "type": "library",
-    "description": "A library adding the timestamp type to Doctrine ORM",
+    "description": "A library adding the timestamp type to Doctrine ORM (forked from mmerian/doctrine-timestamp not updated anymore)",
     "keywords": ["Doctrine", "ORM", "timestamp", "DateTime"],
     "license": "MIT",
     "authors": [
