@@ -1,5 +1,7 @@
 doctrine-timestamp
 ==================
+Forked version of the mmerian/doctrine-timestamp that have not been updated for years. 
+
 
 Implementation of a timestamp type for the Doctrine DBAL
 
